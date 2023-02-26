@@ -1,0 +1,31 @@
+# Test your FastAPI endpoints
+
+#get image error
+GET http://127.0.0.1:8000/image/2
+Accept: application/json
+
+###
+
+#process error 1
+GET http://127.0.0.1:8000/process/-1
+Accept: application/json
+
+###
+
+#process error 2
+GET http://127.0.0.1:8000/process/2
+Accept: application/json
+
+###
+
+#get image ok
+GET http://127.0.0.1:8000/image/1
+Accept: application/json
+
+###
+
+#process ok
+GET http://127.0.0.1:8000/process/1
+Accept: application/json
+
+###
